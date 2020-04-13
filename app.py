@@ -39,12 +39,12 @@ app = Flask(__name__)
 def welcome():
     """List all available api routes."""
     return (
-        f"Available Routes:<br/>"
-        f"/api/v1.0/precipitation<br/>"
-        f"/api/v1.0/stations<br/>"
-        f"/api/v1.0/tobs<br/>"
-        f"/api/v1.0/(start)<br/>"
-        f"/api/v1.0/(start)/(end)<br/>"
+        f"Available Routes:<br/><br/>"
+        f"/api/v1.0/precipitation<br/>Returns a JSON list of precipitation data for last year of the data set<br/><br/>"
+        f"/api/v1.0/stations<br/>Return a JSON list of stations<br/><br/>"
+        f"/api/v1.0/tobs<br/>Return a JSON list of temperature observations (TOBS) for the previous year from station USC00519281 (most active station)<br/><br/>"
+        f"/api/v1.0/(start)<br/>Return a JSON list of the minimum temperature, the average temperature, and the max temperature for a given start date (date format: m-d-y) <br/><br/>"
+        f"/api/v1.0/(start)/(end)<br/>Return a JSON list of the minimum temperature, the average temperature, and the max temperature for a given start or start-end range (date format: m-d-y; max end is 8/23/17)<br/><br/>"
     )
 
 ##################################################################################################
@@ -71,11 +71,7 @@ def precipitation():
     rain_data = []
     precipitation_dict = {}
     for date, prcp in results:
-        # if date not in precipitation_dict.keys():
-        #     #precipitation_dict = {}
-        #     precipitation_dict[date].append(prcp)
-        # else:
-        #     precipitation_dict[date].append(prcp)
+
         precipitation_dict = {}
         precipitation_dict[date]=prcp
         rain_data.append(precipitation_dict)
