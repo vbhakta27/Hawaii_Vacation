@@ -10,11 +10,14 @@ Used Python and SQLAlchemy to do basic climate analysis and data exploration of 
 - Used SQLAlchemy automap_base() to reflect your tables into classes and save a reference to those classes called Station and Measurement.
 - Designed a query to retrieve the last 12 months of precipitation data.
 - Loaded the query results into a Pandas DataFrame and set the index to the date column while sorting the DataFrame values by date.
+- Used Pandas to print the summary statistics for the precipitation data.
 
 Plot of Hawaii precipitation data for the last year of the data set.
+
 ![](/Output/Hawaii_Precipitation.png)
 
 Summary statistics table for the precipitation data.
+
 ![](/Output/Summary_Statistics_Table.png)
 
 ## Station Analysis
