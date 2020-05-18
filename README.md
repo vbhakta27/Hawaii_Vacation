@@ -1,6 +1,16 @@
-# sqlalchemy-challenge
+# Hawaii Climate Analysis and Exploration
+
+## Background
+Congratulations! You've decided to treat yourself to a long holiday vacation in Honolulu, Hawaii! To help with your trip planning, you need to do some climate analysis on the area. The following outlines what you need to do.
 
 ## Climate Analysis and Exploration
+Used Python and SQLAlchemy to do basic climate analysis and data exploration of my climate database. All of the following analysis were completed using SQLAlchemy ORM queries, Pandas, and Matplotlib. I used the provided starter notebook and hawaii.sqlite files to complete my climate analysis and data exploration.
+
+- Used SQLAlchemy create_engine to connect to your sqlite database.
+- Used SQLAlchemy automap_base() to reflect your tables into classes and save a reference to those classes called Station and Measurement.
+- Designed a query to retrieve the last 12 months of precipitation data.
+- Loaded the query results into a Pandas DataFrame and set the index to the date column while sorting the DataFrame values by date.
+
 Plot of Hawaii precipitation data for the last year of the data set.
 ![](/Output/Hawaii_Precipitation.png)
 
