@@ -1,4 +1,4 @@
-# Hawaii Climate Analysis and Exploration
+# Hawaii Vacation
 
 ## Background
 Congratulations! You've decided to treat yourself to a long holiday vacation in Honolulu, Hawaii! To help with your trip planning, you need to do some climate analysis on the area. The following outlines what you need to do.
@@ -21,6 +21,12 @@ Summary statistics table for the precipitation data.
 ![](/Output/Summary_Statistics_Table.png)
 
 ## Station Analysis
+- Designed a query to calculate the total number of stations.
+- Design a query to find the most active stations.
+- Listed the stations and observation counts in descending order.
+- Design a query to retrieve the last 12 months of temperature observation data (TOBS).
+- Filter by the station with the highest number of observations.
+
 There are a total of 9 stations.
 
 USC00519281 is the most active station with 2772 records.
